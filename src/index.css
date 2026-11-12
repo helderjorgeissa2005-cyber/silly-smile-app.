@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom glowing effects and animations */
+@keyframes eyeTwitch {
+  0%, 90%, 100% { transform: scale(1); }
+  92% { transform: scale(1.15, 0.85); }
+  94% { transform: scale(0.9, 1.2); }
+  96% { transform: scale(1); }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes glitchFlicker {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 15px currentColor); }
+  50% { opacity: 0.85; filter: drop-shadow(0 0 25px currentColor) drop-shadow(-3px 0 2px red); }
+  75% { opacity: 0.95; filter: drop-shadow(0 0 10px currentColor) drop-shadow(3px 0 2px cyan); }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-flicker {
+  animation: glitchFlicker 2.5s infinite;
+}
+
+/* Hide scrollbars while allowing smooth scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

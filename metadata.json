@@ -1,0 +1,6 @@
+{
+  "name": "Silly Smile 4K - Ultra Live Wallpapers & Soundboard",
+  "description": "Interactive 4K Silly Smile live wallpapers with responsive eye tracking, sound effects, custom face studio, and phone lock screen simulator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
