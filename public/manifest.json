@@ -1,0 +1,18 @@
+{
+  "name": "SillySmile 4K",
+  "short_name": "SillySmile",
+  "description": "Papel de Parede Interativo 4K",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://flaticon.com",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
